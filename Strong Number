@@ -1,0 +1,14 @@
+n=int(input())
+x=0
+temp=n
+while n>0:
+    r=n%10
+    fact=1
+    for i in range(1,r+1):
+        fact=fact*i
+        x+=fact
+        n=n//10
+if x==temp:
+    print("Strong Number")
+else:
+    print("Not a Strong Number")
