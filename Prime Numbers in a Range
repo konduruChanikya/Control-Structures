@@ -1,0 +1,10 @@
+l=int(input())
+h=int(input())
+for i in range(l+1,h):
+    sum=1
+    for j in range(2,i):
+        if i%j==0:
+            sum=0
+    if sum:
+            
+        print(i)
